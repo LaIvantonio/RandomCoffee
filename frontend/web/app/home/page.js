@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+
+import NoMatch from '@/components/NoMatch';
+import Match from '@/components/Match';
 
 const page = () => {
-  return (
-	<div>page</div>
-  )
-}
+    return (
+        <>
+            {/* <NoMatch/> */}
+            <Match />
+            
+        </>
+    );
+};
 
-export default page
+export default page;

@@ -13,6 +13,9 @@ export const metadata = {
     description: `Сервис для нетворкинга и общения сотрудников вне рабочих задач. 
     Сервис рандомно делит коллег на пары и предлагает онлайн или офлайн (если сотрудник удаленный) 
     встретиться и поболтать за чашечкой кофе.`,
+    icons: {
+        icon: '/coffee-icon.svg'
+    }
 };
 
 export default function RootLayout({ children }) {
