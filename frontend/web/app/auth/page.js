@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { useRouter, useSearchParams } from 'next/navigation';
 import useAuthStore from '@/store/AuthStore';
+import Link from 'next/link';
 
 import GoogleAuthButton from '@/components/GoogleAuthButton';
 
@@ -31,7 +32,9 @@ const AuthPage = () => {
                     quality={100}
                     alt="оджетто"
                 />
-                <GoogleAuthButton />
+                <Link href='/'>
+                    <GoogleAuthButton />
+                </Link>
                 <div className="h-[.1rem] w-[100%] bg-gray mt-[3rem] mx-auto" />
                 <p className="text-wrap mt-[2rem] text-[1.6rem] text-center">
                     Если у тебя возникли проблемы с авторизацией, обязательно <br /> свяжись с

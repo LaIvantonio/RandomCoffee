@@ -8,7 +8,7 @@ export default function Start() {
     const router = useRouter();
 
     React.useEffect(() => {
-        router.push('/auth');
+        router.push('/home');
     }, [router]);
 
     return (
